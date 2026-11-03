@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打造你的暑假專屬數位回憶 | 數位回憶策展人</title>
+    <style>
+        :root {
+            --primary-color: #2a6f97; 
+            --secondary-color: #a9d6e5; 
+            --accent-color: #ffb703; 
+            --bg-color: #f8f9fa; 
+            --text-color: #2b2d42; 
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(rgba(42, 111, 151, 0.6), rgba(0, 0, 0, 0.4)), 
+                        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=cover&w=1200&q=80') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .story-section {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        .story-text {
+            font-size: 1.1rem;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px); 
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .gallery-caption {
+            padding: 15px;
+            font-size: 0.95rem;
+            color: #555;
+            border-top: 3px solid var(--secondary-color);
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+
+        .btn-share {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+
+        .btn-share:hover {
+            background-color: #e6a600;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            .story-section { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>那年夏天，我們在蔚藍海岸的足跡</h1>
+        <p>「快門按下的那一刻，回憶就定格了。」一場與海浪、日光、和冰淇淋的仲夏相遇。</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="story-section">
+            <h2 class="section-title">最難忘的仲夏片段</h2>
+            <p class="story-text">
+                八月的一個午後，陽光毫無保留地灑在金黃色的沙灘上。這是我在暑假中最難忘的一天，我們全家來到了南台灣的海邊。空氣中瀰漫著淡淡的鹹味與防曬乳的香氣，耳邊伴隨著規律而治癒的浪潮聲。
+            </p>
+            <p class="story-text">
+                手裡拿著剛買的芒果冰淇淋，正一滴滴地在熱氣中融化。那一刻，我和朋友奔向海浪，冰涼的海水瞬間浸濕了腳踝，沖散了整個夏天的燥熱。AI 幫我捕捉了當時的感性語調，但最真實的，還是我手心感受到的溫度，以及在夕陽西下時，海面泛起波光粼粼的溫柔金黃色。這不只是一場旅行，更是我充飽電、迎接九年級挑戰的秘密基地。
+            </p>
+        </section>
+
+        <section>
+            <h2 class="section-title">數位記憶策展相簿</h2>
+            <div class="gallery-grid">
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=cover&w=500&q=80" alt="真實回憶照片">
+                    <div class="gallery-caption">
+                        <span class="tag">📸 自有照片</span>
+                        <p>手動修飾：初抵達沙灘時，拍下毫無腳印的純淨海岸線。</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=cover&w=500&q=80" alt="AI 氛圍意境圖">
+                    <div class="gallery-caption">
+                        <span class="tag">🤖 AI 意境生成</span>
+                        <p>Prompt 指令：夏日、陽光穿透樹葉、海邊長椅的寧靜感。</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?auto=format&fit=cover&w=500&q=80" alt="夏夜星空意境圖">
+                    <div class="gallery-caption">
+                        <span class="tag">🤖 AI 意境生成</span>
+                        <p>Prompt 指令：超現實主義、海邊夏夜星空、螢光浪花。</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>打造你的暑假專屬數位回憶專案 - 適用年級：九年級</p>
+        <p>網頁策展人：蔡若望 (歡迎在 Padlet 上留下你的正面評價！)</p>
+        <a href="#" class="btn-share" onclick="alert('恭喜你完成網頁製作！請記得交件到 Google Classroom。')">完成發佈與分享</a>
+    </footer>
+
+</body>
+</html>
